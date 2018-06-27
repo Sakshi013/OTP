@@ -7,28 +7,33 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="379dp"
-        android:layout_height="507dp"
+        android:layout_width="380dp"
+        android:layout_height="509dp"
         android:background="@android:color/darker_gray"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:layout_marginTop="30dp"
             android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/textView"
-                android:layout_width="213dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@android:color/white"
                 android:text="@string/name"
+                android:textAlignment="center"
                 android:textSize="25sp" />
 
             <EditText
@@ -39,29 +44,36 @@
                 android:background="@android:color/white"
                 android:ems="10"
                 android:hint="@string/enter_name"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:textAlignment="center" />
         </LinearLayout>
 
         <EditText
             android:id="@+id/num"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:layout_marginTop="30dp"
             android:background="@android:color/white"
             android:ems="10"
             android:hint="@string/enter_your_number"
             android:inputType="number"
+            android:textAlignment="center"
             android:textSize="25sp" />
 
         <EditText
             android:id="@+id/text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:layout_marginTop="40dp"
             android:background="@android:color/white"
             android:ems="10"
             android:hint="@string/enter_your_message"
             android:inputType="textPersonName"
+            android:textAlignment="center"
             android:textSize="25sp" />
 
         <Button
@@ -73,6 +85,7 @@
             android:layout_marginTop="80dp"
             android:background="@android:color/holo_blue_dark"
             android:text="@string/send"
+            android:textAlignment="center"
             android:textSize="25sp" />
 
     </LinearLayout>

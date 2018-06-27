@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 public class Main2Activity extends AppCompatActivity {
 
+
     EditText OTP;
     Button otpButton;
 
@@ -22,6 +23,8 @@ public class Main2Activity extends AppCompatActivity {
 
         String  message = getIntent().getStringExtra("message");
 
+
+// sending of otp ......
         final int x = Integer.valueOf(message);
 
 
@@ -32,9 +35,12 @@ public class Main2Activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                String UserOTP = OTP.getText().toString().trim();
-                Integer y = Integer.valueOf(UserOTP);
+//                when user gets otp and after that he sees the otp and confirms the otp
 
+                String UserOTP = OTP.getText().toString().trim();
+
+                Integer y = Integer.valueOf(UserOTP);
+// value of otp got by the user equal to value of otp  received
                 if (x == y) {
                     Toast.makeText(Main2Activity.this, "Submitted Successfully", Toast.LENGTH_SHORT).show();
                 } else {
