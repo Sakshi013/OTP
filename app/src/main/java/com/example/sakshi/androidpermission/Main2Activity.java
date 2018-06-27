@@ -25,7 +25,7 @@ public class Main2Activity extends AppCompatActivity {
 
 
 // sending of otp ......
-        final int x = Integer.valueOf(message);
+        final int s1 = Integer.valueOf(message);
 
 
 
@@ -39,9 +39,9 @@ public class Main2Activity extends AppCompatActivity {
 
                 String UserOTP = OTP.getText().toString().trim();
 
-                Integer y = Integer.valueOf(UserOTP);
+                Integer s2 = Integer.valueOf(UserOTP);
 // value of otp got by the user equal to value of otp  received
-                if (x == y) {
+                if (s1 == s2) {
                     Toast.makeText(Main2Activity.this, "Submitted Successfully", Toast.LENGTH_SHORT).show();
                 } else {
 
